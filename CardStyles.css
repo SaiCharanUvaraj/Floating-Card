@@ -1,0 +1,170 @@
+body
+{
+    background:linear-gradient(to bottom,#C490E4,#F6C6EA);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.heading
+{
+    color:black;
+    font-size:3rem;
+    text-align: center;
+    text-shadow:6px 6px 12px white;
+    font-family: cursive;
+    font-weight: bold;
+}
+.card
+{
+    box-shadow:6px 6px 12px black;
+    border: 0px transparent solid;
+}
+.card-header
+{
+    background-color:#F14E95;
+    color:white;
+    font-size:2rem;
+    transition:0.5s;
+}
+.card-body
+{
+    background-color:#442A9D;
+    color:white;
+    transition:0.5s;
+}
+.text1
+{
+    font-size: 0rem;
+    transition: 0.5s;
+    font-weight: bold;
+    color: #442A9D;
+    opacity:0;
+}
+.text2
+{
+    font-size: 0rem;
+    transition: 0.5s;
+    font-weight: bold;
+    color: #442A9D;
+    opacity:0;
+}
+.text3
+{
+    font-size: 0rem;
+    transition: 0.5s;
+    font-weight: bold;
+    color: #442A9D;
+    opacity:0;
+}
+.city-image
+{
+    margin:0rem;
+    height:15rem;
+    transition:0.5s;
+}
+.btn
+{
+    background-color:#442A9D;
+    color: #442A9D;
+    width:0rem;
+    margin:0rem;
+    font-size:0rem;
+    opacity:0;
+    transition:0.5s;
+}
+.card:hover
+{ 
+    .card
+    {
+        border: 0px transparent solid;
+    }
+    .card-header
+    {
+        background-color:#F14E95;
+        color:white;
+        font-size:2.5rem;
+        transition:0.5s;
+    }
+    .card-body
+    {
+        background-color:#442A9D;
+        color:white;
+        transition:0.5s;
+    }
+    .text1
+    {
+        font-size: 1.5rem;
+        transition: 0.5s;
+        font-weight: bold;
+        color: white;
+        opacity:1;
+    }
+    .text2
+    {
+        font-size: 1rem;
+        transition: 0.5s;
+        font-weight: bold;
+        color: white;
+        opacity:1;
+    }
+    .text3
+    {
+        font-style: italic;
+        font-size: 1rem;
+        transition: 0.5s;
+        font-weight: bold;
+        color: white;
+        opacity:1;
+    }
+    .city-image
+    {
+        margin-top:0rem;
+        height:0rem;
+        border: 0rem transparent solid;
+        opacity:0;
+        transition:0.5s;
+    }
+    .btn
+    {
+        background-color: #F14E95;
+        color: white;
+        width:40%;
+        margin:0.5rem;
+        font-size:1rem;
+        opacity:1;
+        transition:0.5s;
+    }
+    .btn:hover
+    {
+        background-color:#F14E95;
+        color:white;
+        transform: scale(1.1);
+        width:40%;
+        margin:0.5rem;
+        font-size:1rem;
+        transition:0.5s;
+    }
+    .btn:active
+    {
+        background-color:#F14E95;
+        color:white;
+        transform: scale(0.9);
+        border: 0px transparent solid;
+        width:40%;
+        margin:0.5rem;
+        font-size:1rem;
+        transition:0.5s;
+    }
+}
+.cardJumpingAnimation
+{
+    animation: jumpingAnimation 5s linear infinite;
+}
+@keyframes jumpingAnimation 
+{
+    0% { transform: scale(1); box-shadow:6px 6px 12px black; }
+    25% { transform: scale(1.02); box-shadow:12px 12px 12px black;}
+    50% { transform: scale(1); box-shadow:6px 6px 12px black;}
+    75% { transform: scale(0.98); box-shadow:0px 0px 12px black;}
+    100% { transform: scale(1); box-shadow:6px 6px 12px black;}
+}
